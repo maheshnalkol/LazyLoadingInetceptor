@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute, Router } from '@angular/router';
 import { Icategory } from 'src/app/shared/models/categories';
 
 @Component({
@@ -37,7 +38,12 @@ export class ProddashComponent implements OnInit {
       subcategories: ['Phone Cases', 'Earphones', 'SmartWatch'],
     },
   ];
-  constructor() {}
+  constructor(private _router: Router, private _routes: ActivatedRoute) {}
 
-  ngOnInit(): void {}
+  ngOnInit(): void {
+    // this.bydefault();
+  }
+  bydefault() {
+    this._router.navigate(['/']);
+  }
 }

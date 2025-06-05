@@ -2,6 +2,15 @@
   <div class="col-md-4">
     <ul class="list-group">
       <li
+        routerLinkActive="active"
+        [routerLink]="list"
+        class="list-group-item text-center color mb-3"
+        *ngFor="let list of usersList"
+        style="cursor: pointer"
+      >
+        {{ list | titlecase }}
+      </li>
+      <!-- <li
         routerLink="active"
         class="list-group-item text-center bg-warning mb-2"
         style="cursor: pointer"
@@ -14,7 +23,7 @@
         style="cursor: pointer"
       >
         In Active Users
-      </li>
+      </li> -->
     </ul>
   </div>
   <div class="col-md-8">

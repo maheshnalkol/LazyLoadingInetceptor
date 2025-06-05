@@ -2,11 +2,12 @@
   <div class="col-md-4">
     <ul class="list-group categories">
       <li
+        routerLinkActive="active"
         [routerLink]="cat.category"
         [queryParams]="{
           category: cat.category
         }"
-        class="list-group-item mb-3 bg-warning"
+        class="list-group-item mb-3 color"
         style="cursor: pointer"
         *ngFor="let cat of caragaryArr"
       >
