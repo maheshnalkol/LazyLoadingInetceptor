@@ -1,0 +1,14 @@
+<mat-card class="h-100">
+  <div class="imagcontainer">
+    <img
+      [src]="getdata.images[0]"
+      [alt]="getdata.title"
+      [title]="getdata.title"
+    />
+  </div>
+  <mat-card-content>
+    <p><strong>Name : </strong>{{ getdata.title }}</p>
+    <p><app-rating [getrating]="getdata.rating"></app-rating></p>
+    <p><strong>Sub-Category :</strong> {{ getdata.subcategory }}</p>
+  </mat-card-content>
+</mat-card>

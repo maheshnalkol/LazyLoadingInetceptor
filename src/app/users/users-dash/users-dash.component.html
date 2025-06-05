@@ -1,0 +1,23 @@
+<div class="row mt-2">
+  <div class="col-md-4">
+    <ul class="list-group">
+      <li
+        routerLink="active"
+        class="list-group-item text-center bg-warning mb-2"
+        style="cursor: pointer"
+      >
+        Active Users
+      </li>
+      <li
+        routerLink="inactive"
+        class="list-group-item text-center bg-warning"
+        style="cursor: pointer"
+      >
+        In Active Users
+      </li>
+    </ul>
+  </div>
+  <div class="col-md-8">
+    <router-outlet></router-outlet>
+  </div>
+</div>

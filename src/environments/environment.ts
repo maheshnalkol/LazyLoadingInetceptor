@@ -3,7 +3,9 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
-  production: false
+  production: false,
+  jsonData: `https://jsonplaceholder.typicode.com/users`,
+  productData: `https://ecom-backend-omega-six.vercel.app/products`,
 };
 
 /*

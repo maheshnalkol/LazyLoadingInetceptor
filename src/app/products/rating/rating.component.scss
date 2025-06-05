@@ -1,0 +1,15 @@
+.stars {
+  position: relative;
+  display: inline-block;
+  .empty-star {
+    color: gray;
+  }
+  .fillted-star {
+    position: absolute;
+    color: gold;
+    top: 0;
+    left: 0;
+    white-space: nowrap;
+    overflow: hidden;
+  }
+}
